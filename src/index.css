@@ -1,0 +1,7 @@
+body {
+    box-sizing: border-box;
+    background-color: yellowgreen;
+}
+h1, h4 {
+    text-align: center;
+}

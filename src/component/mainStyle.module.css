@@ -1,0 +1,31 @@
+.input {
+    box-sizing: border-box;
+    display:block;
+    color: rgb(13, 67, 129);
+    font-size: 25px;
+    width: 80%;
+    padding: 10px 20px;
+    margin-left: 100px;
+}
+
+label {
+    display: block;
+    color: blue;
+    font-weight: 700;
+    font-size: 18px;
+}
+.FormOne {
+    box-sizing: border-box;
+    border: 2px solid navy;
+    border-radius: .5cm;
+    background-color: paleturquoise;
+    margin: 50px 30px 20px 30px; 
+    width: 90%;
+    height:auto;
+    padding: 20px;
+}
+.ver {
+    font-size: 28px;
+    font-family: "Lucida Sans Unicode";
+    color:#0033cc;
+}

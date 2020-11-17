@@ -2,10 +2,12 @@ import React from 'react';
 
  
 function FormTwo(props) {
-     let c = () => {
-         
-        document.getElementById('my').innerHTML = 
-        document.getElementById("birthDate").value;
+     let ageCal = () => {
+
+        const yearsPatt = /\d{4}/g; 
+        const birthYear = document.getElementById("birthDate").value.match(yearsPatt);
+        const result = new Date().getFullYear() - birthYear;
+        document.getElementById("Age").innerHTML = result;
 
      }
      
@@ -14,9 +16,10 @@ function FormTwo(props) {
         <div>
             <label>Birth Date:</label>
             <input id="birthDate" type='date' />
-            <button onClick={c} value="click">click</button>
-            <p id="my"></p>
-            <p>myname: {props.name}</p>
+            <button onClick={ageCal} value="click">click</button>
+            <p className='items'>Age:</p>
+            <p id="Age"></p>
+            
         
         </div>
     )

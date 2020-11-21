@@ -3,10 +3,11 @@ body {
     background-color: rgb(205, 50, 153);
     
 }
+/*
 h1, h4 {
     text-align: center;
 }
-/*
+
 .input-form {
     box-sizing: border-box;
     display:block;
@@ -15,7 +16,7 @@ h1, h4 {
     width: 80%;
     padding: 10px 20px;
     margin-left: 100px;
-}*/
+
 
 .items {
     
@@ -28,4 +29,23 @@ h1, h4 {
     color:rgb(17, 104, 97);
     font-weight: 700;
     font-size: 28px;
+}*/
+#funcCompo {grid-area: header}
+#classCompo {grid-area: inleft}
+#clock {grid-area: main}
+#Class_2Compo {grid-area: inright}
+.index-container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'inleft main main inright'
+    'inleft main main inright'
+    'inleft main main inright'
+    'inleft main main inright';
+    padding: 10px;
+    grid-gap: 10px;
+}
+.items {
+    background-color: palevioletred;
+    text-align: center;
 }

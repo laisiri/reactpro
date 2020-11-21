@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import FormEvent from "./component/event-1";
-import FormTwo from "./component/event-2";
+import FuncCompo from './component/FuncCompo'
+import ClassCompo from './component/ClassCompo'
+import Clock from './component/Clock'
+import Class2Compo from './component/Class_2Compo'
 import './index.css';
 
 class FirstComponent extends React.Component{
@@ -23,11 +25,12 @@ class FirstComponent extends React.Component{
         
 
         return (
-            <div>
-                <h1>Hello React</h1>
-                < FormEvent />
-                < FormTwo />
-                
+            <div className='index-container'>
+
+                < FuncCompo />
+                < ClassCompo />
+                < Clock />
+                <Class2Compo />
                 
             
             </div>

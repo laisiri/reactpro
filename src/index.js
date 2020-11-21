@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import FuncCompo from './component/FuncCompo'
-import ClassCompo from './component/ClassCompo'
-import Clock from './component/Clock'
 import Class2Compo from './component/Class_2Compo'
+import Main from './component/main'
 import './index.css';
+import FoodList from './component/foodList';
 
 class FirstComponent extends React.Component{
     
@@ -27,10 +27,10 @@ class FirstComponent extends React.Component{
         return (
             <div className='index-container'>
 
+                < Main />
                 < FuncCompo />
-                < ClassCompo />
-                < Clock />
-                <Class2Compo />
+                < FoodList />
+                < Class2Compo />
                 
             
             </div>

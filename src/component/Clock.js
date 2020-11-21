@@ -17,7 +17,8 @@ class Clock extends React.Component{
         super(props)
         //assign state.date = new Date()
         this.state = {
-            date: new Date()
+            date: new Date(),
+            clock: true
         }
         this.timerId = this.timerId.bind(this);
         //this.componentWillUnmount = this.componentWillUnmount.bind(this)
@@ -30,7 +31,24 @@ class Clock extends React.Component{
 
     }
     handleClick(){
-        document.querySelector("#showClock").remove();
+        //if clock === true 
+        if(this.state.clock) {
+            //hide "showClock"Id 
+            document.getElementById("showClock").style.display = 'none';
+            document.getElementById("clockBtn").innerHTML = "CLOCK";
+            //and set clock = fault
+            this.setState({
+                clock: !true
+            })
+
+        }else{
+            document.getElementById("showClock").style.display = 'block';
+            document.getElementById("clockBtn").innerHTML = "STOP CLOCK";
+            this.setState({
+                clock: true
+            })    
+        }
+        
     }   
     //creat lifecycle 
     componentDidMount() {
@@ -51,9 +69,9 @@ class Clock extends React.Component{
         return (
             <div id ="clock" className='items'>
 
-                <h1>Class Clock</h1>
+                
                 <h4 id="showClock">{this.state.date.toLocaleTimeString()}</h4>
-                <button onClick={this.handleClick}>stop</button>
+                <button id='clockBtn' onClick={this.handleClick}>STOP CLOCK</button>
                     
 
             </div>

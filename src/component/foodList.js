@@ -1,4 +1,5 @@
 import React from 'react'
+import Food from './food'
 import porknoodle from './porknoodle.jpg'
 import padthai from './padthai.jpg'
 import padkraprown from './padkraprown.jpg'
@@ -9,13 +10,12 @@ class FoodList extends React.Component {
        
         return (
             <div id='foodList' className='items'>
+                
                 <h2>รายการอาหาร</h2>
-                <img src={porknoodle} alt="soup noodle" width="300" height="150"/>
-                <h4>ก๋วยเตี๋ยวเรือ</h4>
-                <img src={padthai} alt="padthai" width="300" height="150"/>
-                <h4>ผัดไท</h4>
-                <img src={padkraprown} alt="padkraprown" width="300" height="150"/>
-                <h4>ข้าวผัดกระเพราหมู</h4>
+                <Food image={porknoodle} alt="porkNoodle" name="ก๋วยเตี๋ยวเรือ"/>
+                <Food image={padthai} alt="padthai" name="ผัดไท"/>
+                <Food image={padkraprown} alt="padkraprown" name="ข้าวผัดกระเพราหมู"/>
+               
             </div>    
         );
     };

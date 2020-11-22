@@ -1,4 +1,6 @@
-h4:hover {
+
+/*select all hover on h4 in #foodList*/
+#foodList h4:hover {
   color:rgb(211, 79, 123);
   cursor: pointer;
 }

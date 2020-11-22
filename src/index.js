@@ -27,9 +27,10 @@ class FirstComponent extends React.Component{
         return (
             <div className='index-container'>
 
-                < Main />
+                
                 < FuncCompo />
                 < FoodList />
+                < Main />
                 < Class2Compo />
                 
             

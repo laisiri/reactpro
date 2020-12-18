@@ -1,0 +1,7 @@
+#clockBtn {
+    background-color: palevioletred;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    box-shadow:  rgb(219, 95, 137);
+}

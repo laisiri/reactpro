@@ -1,4 +1,5 @@
 import React from 'react'
+import './clock.css'
 
 class Clock extends React.Component{
     /*
@@ -34,7 +35,7 @@ class Clock extends React.Component{
         //if clock === true 
         if(this.state.clock) {
             //hide "showClock"Id 
-            document.getElementById("showClock").style.display = 'none';
+            document.getElementById("showClock").style.visibility = 'hidden';
             document.getElementById("clockBtn").innerHTML = "CLOCK";
             //and set clock = fault
             this.setState({
@@ -42,8 +43,8 @@ class Clock extends React.Component{
             })
 
         }else{
-            document.getElementById("showClock").style.display = 'block';
-            document.getElementById("clockBtn").innerHTML = "STOP CLOCK";
+            document.getElementById("showClock").style.visibility = 'visible';
+            document.getElementById("clockBtn").innerHTML = "CLOSE";
             this.setState({
                 clock: true
             })    
@@ -71,7 +72,7 @@ class Clock extends React.Component{
 
                 
                 <h4 id="showClock">{this.state.date.toLocaleTimeString()}</h4>
-                <button id='clockBtn' onClick={this.handleClick}>STOP CLOCK</button>
+                <button id='clockBtn' onClick={this.handleClick}>CLOCK</button>
                     
 
             </div>
